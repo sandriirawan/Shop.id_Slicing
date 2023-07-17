@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="../assets/CSS/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+
+  <title>My Bag - Shop Id</title>
+
+</head>
+
+<body>
+  <header id="navbar">
+            <!-- navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+              <a href="./home.html"><img class="logo" src="../assets/img/logo.png" alt="logo" /></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                  aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <input class="form-control input" type="search" placeholder="Search" aria-label="Search" />
+                      </li>
+                  </ul>
+                  <i class="search bi bi-search"></i>
+                  <!-- icon -->
+                  <form class="form-inline">
+                  <!-- icon modal filter -->
+                   <button class="btn" type="button" data-toggle="modal" data-target="#filter">
+                     <i class="filter bi bi-funnel"></i>
+                     </button>
+                     <a href="mybag.html"><i class="cart bi bi-cart"></i></a> 
+                     <a href=""> <i class="bell bi bi-bell "></i></a>
+                     <a href=""> <i class="massage bi bi-envelope-heart"></i></a>  
+                     <a href="./profile.html"> <i class="profile bi bi-person-circle"></i></a>
+                  </form>
+                  <!-- end icon -->
+                </div>
+            </nav>
+              <!-- End navbar -->
+      </header>
+   <main>
+          <!--modal filter -->
+          <div class="modal fade" id="filter" tabindex="-1" aria-labelledby="filterLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="filterLabel">Filter</h1>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container mb-1">
+                    <div class="row">
+                      <div class="col-12">
+                        <span class="text-color">Colors</span>
+                        <div class="color-pallets d-flex pt-3">
+                          <button type="button" class="btn btn-color" data-toggle="button">
+                            <img class="color" src="../assets/img/colors/Ellipse 5.png" alt="" />
+                          </button>
+        
+                          <button type="button" class="btn btn-color" data-toggle="button">
+                            <img class="color" src="../assets/img/colors/Ellipse.png" alt="" />
+                          </button>
+        
+                          <button type="button" class="btn btn-color" data-toggle="button">
+                            <img class="color" src="../assets/img/colors/Ellipse 6.png" alt="" />
+                          </button>
+        
+                          <button type="button" class="btn btn-color" data-toggle="button">
+                            <img class="color" src="../assets/img/colors/Ellipse-1.png" alt="" />
+                          </button>
+        
+                          <button type="button" class="btn btn-color" data-toggle="button">
+                            <img class="color" src="../assets/img/colors/Ellipse-3.png" alt="" />
+                          </button>
+        
+                          <button type="button" class="btn btn-color" data-toggle="button">
+                            <img class="color" src="../assets/img/colors/Ellipse-2.png" alt="" />
+                          </button>
+        
+                          <button type="button" class="btn btn-color" data-toggle="button">
+                            <img class="color" src="../assets/img/colors/Ellipse 7.png" alt="" />
+                          </button>
+        
+                          <button type="button" class="btn btn-color" data-toggle="button">
+                            <img class="color" src="../assets/img/colors/Ellipse 8.png" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="container mb-1">
+                    <div class="row">
+                      <div class="col-12">
+                        <span class="text-color">Sizes</span>
+        
+                        <div class="size-charts d-flex pt-3">
+                          <button type="button" class="btn btn-size" data-toggle="button">
+                            <span class="text-size text-center">XS</span>
+                          </button>
+        
+                          <button type="button" class="btn btn-size" data-toggle="button">
+                            <span class="text-size text-center">S</span>
+                          </button>
+        
+                          <button type="button" class="btn btn-size" data-toggle="button">
+                            <span class="text-size text-center">M</span>
+                          </button>
+        
+                          <button type="button" class="btn btn-size active" data-toggle="button">
+                            <span class="text-size text-center">L</span>
+                          </button>
+        
+                          <button type="button" class="btn btn-size" data-toggle="button">
+                            <span class="text-size text-center">XL</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="container mb-1">
+                    <div class="row">
+                      <div class="col-12">
+                        <span class="text-color">Category</span>
+                      </div>
+                      <div class="col-4">
+                        <div class="list-categories d-flex pt-3">
+                          <button type="button" class="btn btn-category" data-toggle="button">
+                            <span class="text-categories text-center">All</span>
+                          </button>
+                        </div>
+                      </div>
+        
+                      <div class="col-4">
+                        <div class="list-categories d-flex pt-3">
+                          <button type="button" class="btn btn-category" data-toggle="button">
+                            <span class="text-categories text-center">Woman</span>
+                          </button>
+                        </div>
+                      </div>
+        
+                      <div class="col-4">
+                        <div class="list-categories d-flex pt-3">
+                          <button type="button" class="btn btn-category" data-toggle="button">
+                            <span class="text-categories text-center">Man</span>
+                          </button>
+                        </div>
+                      </div>
+        
+                      <div class="col-4">
+                        <div class="list-categories d-flex pt-3">
+                          <button type="button" class="btn btn-category" data-toggle="button">
+                            <span class="text-categories text-center">Boys</span>
+                          </button>
+                        </div>
+                      </div>
+        
+                      <div class="col-4">
+                        <div class="list-categories d-flex pt-3">
+                          <button type="button" class="btn btn-category" data-toggle="button">
+                            <span class="text-categories text-center">Girls</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="container mb-1">
+                    <div class="row">
+                      <div class="col-12">
+                        <span class="text-color">Brand</span>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>
+                            Adidas Originals, Jack & Jones, S.Oliver
+                          </option>
+                          <option value="1">Adidas Originals</option>
+                          <option value="2">Jack & Jones</option>
+                          <option value="3">S.Olive</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="modal-footer">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <button type="button" class="btn btn-discard" data-dismiss="modal">Discard</button>
+                      </div>
+        
+                      <div class="col-6">
+                        <button type="button" class="btn btn-apply">Apply</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal filter -->
+
+          <section id="cart">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2 class="title-categories font-weight-bold">My bag</h2>
+                </div>
+              </div>
+    
+              <div class="row">
+                <!-- side left -->
+                <div class="col-lg-8 col-sm-12">
+                  <!-- card sub-->
+                  <div class="items card-checkbox">
+                    <input type="checkbox" class="checkbox" />
+                    <div class="select-btn-items">
+                      <h6 class="btn-text">Select all items <span></span></h6>
+                      <a class="btn-delete " href="">Delete</a>
+                    </div>
+                  </div>
+    
+                  <!-- list product -->
+                  <div class="product card-checkbox ">
+                    <input type="checkbox" class="checkbox" />
+                      <div class="wrapper-product">
+                        <div class="wrapper-img ">
+                          <img class="img-cart" src="../assets/img/Mask.png" alt="" />
+                        </div>
+                        <div class="wrapper-desc ">
+                          <h5 class="title-product ">Men's formal suit - Black & White</h5>
+                          <p class="text-seller">Zalora Cloth</p>
+                        </div>
+                      <div class="product-qty">
+                        <button class="btn-mines" href=""><i class="bi bi-dash-lg"></i></button>
+                        <span class="qty ms-2 me-2 ">1</span>
+                        <button class="btn-plus" href=""><i class="bi bi-plus-lg"></i></button>
+                      </div>
+                      <h6 class="price font-weight-bold">Rp.100.000</h6>
+                    </div>
+                  </div>
+    
+                  <div class="product card-checkbox ">
+                    <input type="checkbox" class="checkbox" />
+                      <div class="wrapper-product">
+                        <div class="wrapper-img ">
+                          <img class="img-cart" src="../assets/img/Mask Group.png" alt="" />
+                        </div>
+                        <div class="wrapper-desc ">
+                          <h5 class="title-product ">Men's formal suit - Black & White</h5>
+                          <p class="text-seller">Zalora Cloth</p>
+                        </div>
+                      <div class="product-qty">
+                        <button class="btn-mines" href=""><i class="bi bi-dash-lg"></i></button>
+                        <span class="qty ms-2 me-2 ">1</span>
+                        <button class="btn-plus" href=""><i class="bi bi-plus-lg"></i></button>
+                      </div>
+                      <h6 class="price font-weight-bold">Rp.100.000</h6>
+                    </div>
+                  </div>
+    
+                </div>
+    
+                <!-- side right -->
+                <div class="col-lg-4 mt-lg-0">
+                  <div class="card-form-summary">
+                    <div class="row ">
+                      <div class="col-12">
+                        <h5 class="title-sumarry font-weight-bold">Shopping sumarry</h5>
+                      </div>
+                    </div>
+    
+                    <div class="row mt-3">
+                      <div class="col-6">
+                        <p class="text-total">Total Price</p>
+                      </div>
+    
+                      <div class="col-6 text-end">
+                        <h6 class="total-price font-weight-bold">Rp.200.000</h6>
+                      </div>
+                    </div>
+    
+                    <div class="row mt-2">
+                      <div class="col-12">
+                        <a href="ceckout.html"><button type="submit" class="btn btn-buy">Buy</button> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+  
+
+  <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
